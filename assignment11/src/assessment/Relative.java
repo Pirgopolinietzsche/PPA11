@@ -15,8 +15,7 @@ public class Relative extends Person implements Comparable<Relative>{
 
 	@Override
 	public String toString() {
-		return "Relative [distance=" + distance + ", getName()=" + getName()
-				+ ", getFriendliness()=" + getFriendliness() + "]";
+		return getName();
 	}
 	
 
@@ -25,14 +24,7 @@ public class Relative extends Person implements Comparable<Relative>{
 		if (o == null) {
             throw new NullPointerException("Null parameter");
         }
-		if (this.getName().compareTo(o.getName())==-1){
-			return 1;
-		}
-
-		else if (o.equals(this)){
-			return 0;
-		} 
-		else return -1;
+		return this.getName().compareTo(o.getName());
 	}
 	
 	

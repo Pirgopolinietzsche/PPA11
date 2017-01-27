@@ -5,6 +5,7 @@ import java.util.TreeSet;
 public class Banker extends Person {
 	
 	private TreeSet<Relative> relativesList;
+	private Relative hasChildren;
 
 	public Banker(String name, int friendliness) {
 		
