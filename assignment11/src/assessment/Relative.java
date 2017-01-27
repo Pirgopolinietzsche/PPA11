@@ -8,6 +8,10 @@ public class Relative extends Person implements Comparable<Relative>{
 		super(name, friendliness);
 		this.distance=distance;
 	}
+	
+	public Relative(){
+		this.distance=-1;
+	}
 
 	public int getDistance() {
 		return distance;

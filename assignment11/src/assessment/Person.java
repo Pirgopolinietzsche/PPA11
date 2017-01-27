@@ -9,6 +9,7 @@ public class Person {
 		this.name = name;
 		this.friendliness = friendliness;
 	}
+	public Person(){}
 
 	public String getName() {
 		return name;
