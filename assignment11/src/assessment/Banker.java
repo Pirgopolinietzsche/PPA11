@@ -13,8 +13,8 @@ public class Banker extends Person {
 		
 	}
 	
-	public void addRelative(Relative relative){
-		relativesList.add(relative);
+	public boolean addRelative(String name, int friendliness, int distance){
+		return relativesList.add(new Relative(name, friendliness, distance));
 		
 	}
 	

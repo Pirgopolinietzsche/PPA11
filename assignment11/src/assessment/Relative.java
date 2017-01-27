@@ -1,7 +1,5 @@
 package assessment;
 
-import java.util.Comparator;
-
 public class Relative extends Person implements Comparable<Relative>{
 
 	private int distance;
@@ -24,9 +22,20 @@ public class Relative extends Person implements Comparable<Relative>{
 
 	@Override
 	public int compareTo(Relative o) {
-		// TODO Auto-generated method stub
-		return 0;
+		if (o == null) {
+            throw new NullPointerException("Null parameter");
+        }
+		if (this.getName().compareTo(o.getName())==-1){
+			return 1;
+		}
+
+		else if (o.equals(this)){
+			return 0;
+		} 
+		else return -1;
 	}
+	
+	
 
 	
 	
